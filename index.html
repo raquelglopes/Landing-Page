@@ -32,13 +32,13 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Animais">Animais</a>
+                    <a class="nav-link" href="#Selvagens">Animais</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Flores</a>
+                    <a class="nav-link" href="#Flores">Flores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Paisagens</a>
+                    <a class="nav-link" href="#Paisagens">Paisagens</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,7 +50,7 @@
                         <a class="dropdown-item" href="https://github.com/raquelglopes">Github</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link enabled" href="#">Fale Conosco</a>
+                    <a class="nav-link enabled" href="#Contato">Fale Conosco</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -97,6 +97,7 @@
 
     <!--Jumbotrom-->
     <div class="jumbotron text-center Animais">
+        <h1 id="Selvagens"> </h1>
         <h1 class="display-4">Animais Selvagens</h1>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
         <hr class="my-4">
@@ -196,8 +197,74 @@
         </div>
         <!--Textos e Videos-->
 
+        <!--Flores-->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h1 id="Flores"> </h1>
+            <div class="container">
+              <h1 class="display-4">Flores</h1>
+              <p class="lead">Este é uma  sessão sobre flores.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img class="card-img-top" src="assets/img/water-lily-3784022_1280.jpg" alt="Imagem de uma flor de lotus rosa num lago">
+            <div class="card-body">
+              <h2 class="card-title">Flor de Lótus</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title text-center">Flor Rara do Tibete</h1>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 horas atrás</small></p>
+            </div>
+            <img class="card-img-bottom" src="assets/img/flor branca zoom.jpg" alt="Imagem de uma flor branca com miolo roxo">
+          </div>
+          
+
+        <!--/Flores-->
+
+        <!--Paisagens-->
+        <div class="jumbotron text-center">
+            <h1 id="Paisagens"> </h1>
+            <h1 class="display-4">Paisagens</h1>
+            <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou informação.</p>
+            <hr class="my-4">
+            <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+          </div> 
+          <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/beach-front-5819728_640.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="assets/img/tree-736885_640.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h4 class="card-title">Título do card</h4>
+                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+            <div class="card ">
+              <img class="card-img-top" src="assets/img/sea-164989_640.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Título do card</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+          </div>  
+        <!--/Paisagens-->
+
         <!--Formulario de Contato-->
-        <div class="row">
+        <div class="row " >
+            <h1 id="Contato"> </h1>
             <div class="col-md-12">
                 <h4 class="text-center">
                     Fale Conosco
@@ -212,15 +279,16 @@
                         <div class="form-group col-md-12 ">
                             <label for="inputNome">Nome</label>
                         <input type="text" id="inputNome" class="form-control" id="inputNome" placeholder="José da Silva" onkeyup='validaNome()'>
-                        </div>
+                        <div id="txtNome"></div>
                     </div>
+                    </div> 
                     <div class="form-group">
-                        <label for="inputEmail4">Email</label>
+                        <label for="inputEmail">Email</label>
                             <input type="email" class="form-control" id="inputEmail" placeholder="email@email.com"onkeyup='validaEmail()'>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1"> Assunto</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"onkeyup="validaAssunto()"></textarea>
+                        <label for="inputAssunto"> Assunto</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" onkeyup='validaAssunto()'></textarea>
                       </div>
                     <div class="form-group">
                         <div class="form-check">
@@ -265,6 +333,8 @@
     </div>
     </div>
     <!--/Rodapé-->
+
+        <script src="./assets/js/script.js"></script>
 
     <!--Scripts necessarios para utilização dos codigod JS do BootStrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

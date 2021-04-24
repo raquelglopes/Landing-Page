@@ -6,21 +6,20 @@ porId: getElementById()
 por nome : getElementsByName()
 por Classe :getElementsBuClassName()
 por Seletor: querySelector()
+*/
 
-
-!let nome = getElementById(#inputNome)
-let email = document.querySelector('input#email')
-let assunto = document.querySelector('#assunto')
+let nome = document.getElementById('inputNome')
+let email = document.querySelector('#inputEmail')
+let assunto = document.querySelector('#inputAssunto')
 let nomeOk = false
 let emailOk = false
 let assuntoOk = false
-let mapa = document.querySelector('#mapa')
 nome.style.width = '100%'
 email.style.width = '100%'
 
 function validaNome() {
-    let txtNome = document.querySelector('#txtNome')
-    if (txtNome.value.length <2) {
+    let txtNome = document.querySelector('#inputNome')
+    if (nome.value.length <3) {
         txtNome.innerHTML = 'Nome Inválido'
         txtNome.style.color = 'red'
     } else {
@@ -59,4 +58,4 @@ function enviar(){
     } else {
         alert('Preencha todos os campos do formulário antes de enviar.')
     }
-*/
+}
